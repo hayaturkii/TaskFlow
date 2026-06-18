@@ -52,5 +52,5 @@ This project demonstrates the ability to:
 * Translate design concepts into functional web experiences
 * Bridge the gap between UI/UX design and front-end development
 
-## 📌 Disclaimer
+## Disclaimer
 TaskFlow is a conceptual academic project created for educational and portfolio purposes. The mobile application was **not developed**; only the **UI/UX prototype** and the **companion landing page website** were implemented.
