@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1e40af;
+  --dark-bg: #0f172a;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, var(--primary-color), var(--primary-dark), var(--dark-bg));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  padding: 0 40px;
+}
+
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-color) !important;
+}
+
+.border-primary-custom {
+  border-color: var(--primary-color) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.nav-link.active.custom-pill {
+  border-radius: 25px;
+  padding: 8px 20px;
+  background-color: var(--primary-color); 
+  color: #ffffff;          
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
