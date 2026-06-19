@@ -12,213 +12,352 @@
 </head>
 
 <body>
-<header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom"> 
-    <span class="fs-3 fw-bold text-primary-custom">TaskFlow</span> 
-    <ul class="nav nav-pills"> 
-      <li class="nav-item">
-        <a href="#home" class="nav-link active custom-pill" aria-current="page">Home</a>
-      </li> 
-      <li class="nav-item">
-        <a href="#features" class="nav-link">Features</a>
-      </li> 
-      <li class="nav-item">
-        <a href="#pricing" class="nav-link">Pricing</a>
-      </li> 
-    </ul> 
-</header>
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand fs-3 fw-bold text-primary-custom" href="#myCarousel">TaskFlow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item"><a href="#myCarousel" class="nav-link me-2">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link me-2">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link me-2">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<secton id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel"> 
-    <div class="carousel-indicators"> 
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button> 
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> 
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> 
-    </div> 
-    
-    <div class="carousel-inner"> 
-      <div class="carousel-item active"> 
-        <div class="container-xxl py-0"> 
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
-              <h1 class="display-4 fw-bold lh-1 text-white mb-4">Clean your mind, Organize your daily tasks.</h1> 
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> 
-                <button type="button" class="btn btn-light btn-lg px-4 me-md-2">
-                  <i class="bi bi-apple me-2"></i>Download
-                </button>
-                <button type="button" class="btn btn-outline-light btn-lg px-4">
-                  <i class="bi bi-google-play me-2"></i>Download
-                </button>
-              </div>
+  <section id="myCarousel" class="carousel slide py-3" data-bs-ride="carousel"> 
+      <div class="carousel-indicators"> 
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button> 
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button> 
+      </div> 
+      
+      <div class="carousel-inner"> 
+        <div class="carousel-item active"> 
+          <div class="container"> 
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
+                <h1 class="display-4 fw-bold lh-1 text-white mb-4">Clean your mind, Organize your daily tasks.</h1> 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> 
+                  <button type="button" class="btn btn-light btn-lg px-4 me-md-2">
+                    <i class="bi bi-apple me-2"></i>Download
+                  </button>
+                  <button type="button" class="btn btn-outline-light btn-lg px-4">
+                    <i class="bi bi-google-play me-2"></i>Download
+                  </button>
+                </div>
+              </div> 
+              <div class="col-lg-5 p-0 text-center">
+                <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
+              </div> 
             </div> 
-            <div class="col-lg-5 p-0 text-center">
-              <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
-            </div> 
-          </div> 
+          </div>
         </div>
+
+        <div class="carousel-item"> 
+          <div class="container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
+                <h1 class="display-4 fw-bold lh-1 text-white mb-3">Task Management</h1>
+                <p class="lead text-white">Create tasks, subtasks, due dates, reminders and keep everything organized.</p>
+              </div> 
+              <div class="col-lg-5 p-0 text-center">
+                <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
+              </div> 
+            </div> 
+          </div>
+        </div> 
+
+        <div class="carousel-item"> 
+          <div class="container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
+                <h1 class="display-4 fw-bold lh-1 text-white mb-3">Focus Mode</h1>
+                <p class="lead text-white">Remove distractions and focus only on what matters today.</p>
+              </div> 
+              <div class="col-lg-5 p-0 text-center">
+                <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
+              </div> 
+            </div> 
+          </div>
+        </div> 
+
+        <div class="carousel-item"> 
+          <div class="container">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
+                <h1 class="display-4 fw-bold lh-1 text-white mb-3">Project Organization</h1>
+                <p class="lead text-white">Group tasks into projects and track progress effortlessly.</p>
+              </div> 
+              <div class="col-lg-5 p-0 text-center">
+                <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
+              </div> 
+            </div> 
+          </div>
+        </div> 
       </div>
 
-      <div class="carousel-item"> 
-        <div class="container-xxl py-0">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
-              <h1 class="display-4 fw-bold lh-1 text-white mb-3">Task Management</h1>
-              <p class="lead text-white">Create tasks, subtasks, due dates, reminders and keep everything organized.</p>
-            </div> 
-            <div class="col-lg-5 p-0 text-center">
-              <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
-            </div> 
-          </div> 
-        </div>
-      </div> 
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+  </section>
 
-      <div class="carousel-item"> 
-        <div class="container-xxl py-0">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
-              <h1 class="display-4 fw-bold lh-1 text-white mb-3">Focus Mode</h1>
-              <p class="lead text-white">Remove distractions and focus only on what matters today.</p>
-            </div> 
-            <div class="col-lg-5 p-0 text-center">
-              <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
-            </div> 
-          </div> 
-        </div>
-      </div> 
-
-      <div class="carousel-item"> 
-        <div class="container-xxl py-0">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg gradient-background"> 
-            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3"> 
-              <h1 class="display-4 fw-bold lh-1 text-white mb-3">Project Organization</h1>
-              <p class="lead text-white">Group tasks into projects and track progress effortlessly.</p>
-            </div> 
-            <div class="col-lg-5 p-0 text-center">
-              <img src="./images/taskflow-homescreen.png" class="img-fluid rounded-bottom-3 rounded-lg-end-3" alt="App preview" width="350">
-            </div> 
-          </div> 
-        </div>
-      </div> 
+  <section id="features" class="container py-3"> 
+    <hr class="featurette-divider"> 
+    <div class="text-center mb-5">
+      <h2 class="fw-bold fs-2">Powerful Features, Simple Experience</h2>
+      <p class="text-muted">
+        Everything you need to organize your work, 
+        stay focused, and make meaningful progress every day.
+      </p>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-</secton>
-
-<section id="features" class="container marketing"> 
-    <hr class="featurette-divider">
-    <div class="row featurette align-items-center"> 
+    <div class="row featurette align-items-center">
       <div class="col-md-7"> 
-        <h2 class="featurette-heading fw-normal lh-1">Your Productivity Hub</h2>
-        <p class="lead">
-            From daily errands to long-term projects, 
-            TaskFlow gives you a central place to plan, organize, 
-            and manage your workload with confidence.
+        <h2 class="featurette-heading fw-normal lh-1">Add tasks in seconds</h2>
+        <p class="lead text-muted">
+            Quickly create tasks, set deadlines, 
+            assign priorities, and stay organized 
+            without interrupting your workflow.
         </p> 
       </div> 
       <div class="col-md-5 d-flex justify-content-center align-items-center" > 
-        <img src="./images/Home Screen .png" class="img-fluid" style="max-height: 500px" alt="HomeScreen layout">
+        <img src="./images/task-addition.png" class="img-fluid" style="max-height: 500px" alt="Task Addition">
       </div> 
     </div> 
 
     <hr class="featurette-divider"> 
     <div class="row featurette align-items-center"> 
       <div class="col-md-7 order-md-2"> 
-        <h2 class="featurette-heading fw-normal lh-1">Built to Keep You Moving Forward</h2>
+        <h2 class="featurette-heading fw-normal lh-1">Everything you need in one place</h2>
         <p class="lead">
-            Stay focused on what matters most. 
-            With a streamlined workflow and intuitive design,
-            TaskFlow helps you spend less time organizing and more time getting things done.
+            Manage descriptions, due dates, reminders, 
+            priorities, and subtasks from a single, 
+            intuitive interface.
         </p> 
       </div> 
       <div class="col-md-5 d-flex justify-content-center align-items-center" > 
-        <img src="./images/Task Details.png" class="img-fluid" style="max-height: 500px" alt="Task Details Options">
+        <img src="./images/task-details.png" class="img-fluid" style="max-height: 500px" alt="Task Details Options">
       </div> 
     </div> 
-    <hr class="featurette-divider">
-</section> 
 
-<section id="pricing" class="container-xxl py-5">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold fs-2">Choose Your Plan</h2>
-      <p class="text-muted">Start free and upgrade when you're ready.</p>
-    </div>
-    
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 border shadow-sm rounded-3">
-          <div class="card-body d-flex flex-column p-4">
-            <h4 class="fs-5 fw-bold text-secondary mb-1">Free</h4>
-            <h3 class="fs-1 fw-bold mb-3 text-dark">$0<span class="fs-6 text-muted fw-normal">/month</span></h3>
-            <ul class="list-unstyled text-start my-4 flex-grow-1">
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Unlimited Tasks</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Projects</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Due Dates</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Focus Mode</li>
-            </ul>
-            <button class="btn btn-outline-primary w-100 mt-auto rounded-3 border-primary-custom text-primary-custom">Get Started</button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 border-2 shadow rounded-3 border-primary-custom">
-          <div class="card-body d-flex flex-column p-4 position-relative">
-            <div class="d-flex justify-content-between align-items-center mb-1">
-              <h4 class="fs-5 fw-bold mb-0 text-primary-custom">Pro</h4>
-              <span class="badge rounded-pill px-2 py-1 bg-primary-custom" style="font-size: 0.75rem;">POPULAR</span>
-            </div>
-            <h3 class="fs-1 fw-bold mb-3 text-dark">$4.99<span class="fs-6 text-muted fw-normal">/month</span></h3>
-            <ul class="list-unstyled text-start my-4 flex-grow-1">
-              <li class="mb-2 text-dark small"><i class="bi bi-check2 text-success me-2"></i><strong>Everything in Free</strong></li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Reminders</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> AI Suggestions</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Analytics Dashboard</li>
-            </ul>
-            <button class="btn w-100 mt-auto rounded-3 text-white bg-primary-custom">Upgrade Now</button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 border shadow-sm rounded-3">
-          <div class="card-body d-flex flex-column p-4">
-            <h4 class="fs-5 fw-bold text-secondary mb-1">Team</h4>
-            <h3 class="fs-1 fw-bold mb-3 text-dark">$9.99<span class="fs-6 text-muted fw-normal">/month</span></h3>
-            <ul class="list-unstyled text-start my-4 flex-grow-1">
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Shared Projects</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Collaboration Tools</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Team Dashboard</li>
-              <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Priority Support</li>
-            </ul>
-            <button class="btn btn-outline-primary w-100 mt-auto rounded-3 border-primary-custom text-primary-custom">Contact Sales</button>
-          </div>
+    <hr class="featurette-divider"> 
+    <div class="row featurette align-items-center">
+      <div class="col-md-7"> 
+        <h2 class="featurette-heading fw-normal lh-1">Stay focused on what matters</h2>
+        <p class="lead text-muted">
+            Eliminate distractions and concentrate on your top 3 important
+            tasks with a dedicated focus workspace.
+        </p> 
+      </div> 
+      <div class="col-md-5 d-flex justify-content-center align-items-center" > 
+        <img src="./images/focus-mode.png" class="img-fluid" style="max-height: 500px" alt="Focus Mode">
+      </div> 
+    </div> 
+
+    <hr class="featurette-divider"> 
+    <div class="row featurette align-items-center"> 
+      <div class="col-md-7 order-md-2"> 
+        <h2 class="featurette-heading fw-normal lh-1">See your progress every day</h2>
+        <p class="lead">
+            Visual progress indicators help you track completed tasks
+            and maintain motivation as you move closer to your goals.
+        </p> 
+      </div> 
+      <div class="col-md-5 d-flex justify-content-center align-items-center" > 
+        <img src="./images/task-complete.png" class="img-fluid" style="max-height: 500px" alt="Task Completed">
+      </div> 
+    </div> 
+    <hr class="featurette-divider"> 
+
+  </section> 
+
+  <section id="testimonials" class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">What Users Say</h2>
+    <p class="text-muted">Thousands of people rely on TaskFlow every day.</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <p class="card-text">
+            "TaskFlow completely changed how I organize my university assignments and deadlines."
+          </p>
+          <h6 class="mt-3 mb-0 fw-bold">Sarah M.</h6>
+          <small class="text-muted">Student</small>
         </div>
       </div>
     </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <p class="card-text">
+            "The focus mode helps me stay productive without getting distracted."
+          </p>
+          <h6 class="mt-3 mb-0 fw-bold">James K.</h6>
+          <small class="text-muted">Freelancer</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <p class="card-text">
+            "Managing projects with my team has never been easier."
+          </p>
+          <h6 class="mt-3 mb-0 fw-bold">Emily R.</h6>
+          <small class="text-muted">Project Manager</small>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer class="py-4 container">
-    <section class="container text-center py-5"> 
-        <h2>Ready to Get Organized?</h2> 
-        <p>Join thousands of users managing their tasks with TaskFlow.</p>
-        <button class="btn btn-primary btn-lg me-2">
-            <i class="bi bi-apple me-2"></i>Download
+  <section id="pricing" class="container py-3">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold fs-2">Choose Your Plan</h2>
+        <p class="text-muted">Start free and upgrade when you're ready.</p>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column p-4">
+              <h4 class="fs-5 fw-bold text-secondary mb-1">Free</h4>
+              <h3 class="fs-1 fw-bold mb-3 text-dark">$0<span class="fs-6 text-muted fw-normal">/month</span></h3>
+              <ul class="list-unstyled text-start my-4 flex-grow-1">
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Unlimited Tasks</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Projects</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Due Dates</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Focus Mode</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100 mt-auto rounded-3">Get Started</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-2 shadow rounded-3 border-primary-custom">
+            <div class="card-body d-flex flex-column p-4 position-relative">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h4 class="fs-5 fw-bold mb-0 text-primary-custom">Pro</h4>
+                <span class="badge rounded-pill px-2 py-1 bg-primary-custom" style="font-size: 0.75rem;">POPULAR</span>
+              </div>
+              <h3 class="fs-1 fw-bold mb-3 text-dark">$4.99<span class="fs-6 text-muted fw-normal">/month</span></h3>
+              <ul class="list-unstyled text-start my-4 flex-grow-1">
+                <li class="mb-2 text-dark small"><i class="bi bi-check2 text-success me-2"></i><strong>Everything in Free</strong></li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Reminders</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> AI Suggestions</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Analytics Dashboard</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-auto rounded-3">Upgrade Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border shadow-sm rounded-3">
+            <div class="card-body d-flex flex-column p-4">
+              <h4 class="fs-5 fw-bold text-secondary mb-1">Team</h4>
+              <h3 class="fs-1 fw-bold mb-3 text-dark">$9.99<span class="fs-6 text-muted fw-normal">/month</span></h3>
+              <ul class="list-unstyled text-start my-4 flex-grow-1">
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Shared Projects</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Collaboration Tools</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Team Dashboard</li>
+                <li class="mb-2 text-muted small"><i class="bi bi-check2 text-success me-2"></i> Priority Support</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100 mt-auto rounded-3">Contact Sales</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<section id="faq" class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Frequently Asked Questions</h2>
+    <p class="text-muted">Everything you need to know about TaskFlow.</p>
+  </div>
+
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq1">
+          Is TaskFlow free to use?
         </button>
-        <button class="btn btn-outline-primary btn-lg">
-            <i class="bi bi-google-play me-2"></i>Download
-        </button>
-    </section>
-    <hr>
-    <div class="text-center text-muted">
-      &copy; 2026 TaskFlow. All rights reserved.
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes. TaskFlow offers a free plan with essential task management features.
+        </div>
+      </div>
     </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq2">
+          Can I collaborate with my team?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes. Team plans include collaboration tools, shared projects, and team dashboards.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#faq3">
+          Is my data secure?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We use industry-standard security practices to keep your information protected.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="border-top bg-light py-3">
+      <div class="container text-center"> 
+          <h2 class="fw-bold mb-2">Ready to Get Organized?</h2> 
+          <p class="text-muted mb-4">Join thousands of users managing their tasks with TaskFlow.</p>
+          <div class="mb-5">
+            <button class="btn btn-primary btn-lg me-2"><i class="bi bi-apple me-2"></i>Download</button>
+            <button class="btn btn-outline-primary btn-lg"><i class="bi bi-google-play me-2"></i>Download</button>
+          </div>
+          <div class="text-muted small">
+            &copy; 2026 TaskFlow. All rights reserved.
+          </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
